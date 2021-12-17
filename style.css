@@ -74,3 +74,30 @@ html {
   background-color: transparent;
   border: none;
 }
+
+.left-btn {
+  left: 4rem;
+}
+
+.left-btn img {
+  transform: rotate(-90deg);
+}
+
+.right-btn {
+  right: 4rem;
+}
+
+.right-btn img {
+  transform: rotate(90deg);
+}
+
+.page-btn img {
+  width: 4rem;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.page-btn img:hover {
+  opacity: 1;
+}
