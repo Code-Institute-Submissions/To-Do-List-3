@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 body{
@@ -14,6 +15,16 @@ body{
   #d161ff 
   );
 }
+
+h1{
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  top: 240px;
+  font-size: 50px;
+  text-shadow:0 10px 15px rgba(0, 0, 0, 0.8);
+}
+
 
 .container{
 
@@ -34,14 +45,47 @@ body{
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
-/* #push{
 
-  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.6);
-} */
 
 #new-task input{
   width: 70%;
   width: 70%;
   height: 45px;
-  font-family: 'poppins' ,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Cormorant Garamond' ,sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  position: relative;
+  border-radius: 6px;
+}
+
+#new-task input:focus{
+  outline: none;
+  border-color: #8052ec;
+}
+
+#new-task button{
+  position: relative;
+  float: right;
+  width: 60px;
+  height: 45px;
+  border-radius: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  background-color: #5309ff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#tasks{
+  background-color: #ffffff;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  position: relative;
 }
