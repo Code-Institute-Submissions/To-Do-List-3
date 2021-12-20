@@ -20,15 +20,13 @@ h1{
   position: relative;
   color: #ffffff;
   text-align: center;
-  top: 240px;
+  bottom: 15px;
   font-size: 50px;
   text-shadow:0 10px 15px rgba(0, 0, 0, 0.8);
 }
 
 
 .container{
-
-  border: 2px solid white;
   width: 40%;
   min-width: 250px;
   position: absolute;
@@ -88,4 +86,53 @@ h1{
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
   width: 100%;
   position: relative;
+}
+
+.task{
+  background-color: #ffffff;
+  height: 50px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+}
+.task span{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.task button{
+  background-color: #5b2dd1;
+  color: white;
+  height: 100%;
+  width: 45px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.completed{
+  text-decoration: line-through;
+}
+
+@media all and (max-width: 800px){
+  #new-task button{
+    position: inherit;
+    float: unset;
+    margin: auto;
+  }
+  #new-task input{
+    float: unset;
+    width: 100%;
+  }
+  h1{
+    margin: auto;
+    font-size: 34px;
+  }
+
 }
